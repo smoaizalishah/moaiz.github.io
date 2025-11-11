@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta name="description" content="Moaiz — Graphic & UI/UX Designer. Portfolio showcasing selected projects, certificates, and contact." />
+  <link rel="icon" href="Moaiz.png" />
+  <title>Moaiz - Graphic &amp; UI/UX Designer Portfolio</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#135bec",
+            nav: "#062a6d",
+            "nav-dark": "#031826",
+            "background-light": "#f6f6f8",
+            "background-dark": "#101622",
+          },
+          fontFamily: {
+            display: ["Inter", "sans-serif"],
+          },
+          borderRadius: { DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px" },
+        },
+      },
+    };
+  </script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    /* small override to ensure local image coverage looks good */
+    .hero-image-cover { background-size: cover; background-position: center; }
+  </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-[#111318] dark:text-white/90">
+  <div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+    <!-- TopNavBar -->
+    <header
+      class="sticky top-0 z-50 flex items-center justify-center bg-nav dark:bg-nav-dark border-b border-solid border-white/10"
+      id="home">
+      <div class="flex items-center justify-between whitespace-nowrap px-4 sm:px-10 py-3 w-full max-w-5xl">
+        <div class="flex items-center gap-4 text-white">
+          <div class="size-6">
+            <svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M4 42.4379C4 42.4379 14.0962 36.0744 24 41.1692C35.0664 46.8624 44 42.2078 44 42.2078L44 7.01134C44 7.01134 35.068 11.6577 24.0031 5.96913C14.0971 0.876274 4 7.27094 4 7.27094L4 42.4379Z"
+                fill="currentColor"></path>
+            </svg>
+          </div>
+          <h2 class="text-lg font-bold leading-tight tracking-[-0.015em] text-white">Moaiz</h2>
+        </div>
+        <!-- mobile menu button -->
+        <button id="mobile-menu-btn" aria-expanded="false" aria-controls="mobile-menu"
+          class="sm:hidden inline-flex items-center justify-center rounded-md p-2 text-white/90 hover:bg-white/5"> 
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+
+        <div class="hidden sm:flex flex-1 justify-end gap-8">
+          <div class="flex items-center gap-9">
+            <a class="text-white/90 text-sm font-medium leading-normal hover:text-primary transition-colors"
+              href="#home">Home</a>
+            <a class="text-white/90 text-sm font-medium leading-normal hover:text-primary transition-colors"
+              href="#about">About</a>
+            <a class="text-white/90 text-sm font-medium leading-normal hover:text-primary transition-colors"
+              href="#work">Work</a>
+            <a class="text-white/90 text-sm font-medium leading-normal hover:text-primary transition-colors"
+              href="#certificates">Certificates</a>
+            <a class="text-white/90 text-sm font-medium leading-normal hover:text-primary transition-colors"
+              href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+      <!-- mobile menu (hidden by default) -->
+      <div id="mobile-menu" class="hidden sm:hidden bg-nav dark:bg-nav-dark">
+        <div class="px-4 py-3 flex flex-col gap-3">
+          <a href="#home" class="text-white/90">Home</a>
+          <a href="#about" class="text-white/90">About</a>
+          <a href="#work" class="text-white/90">Work</a>
+          <a href="#certificates" class="text-white/90">Certificates</a>
+          <a href="#contact" class="text-white/90">Contact</a>
+        </div>
+      </div>
+    </header>
+  <main class="flex flex-col items-center w-full">
+      <div class="layout-content-container flex flex-col max-w-5xl flex-1 px-4 sm:px-10 py-5">
+        <!-- HeroSection -->
+        <section class="w-full py-8 sm:py-16 md:py-20 lg:py-24">
+          <div class="@container">
+            <div class="@[480px]:p-4">
+              <div
+                class="flex min-h-[320px] sm:min-h-[400px] md:min-h-[480px] lg:min-h-[520px] w-full flex-col gap-4 sm:gap-6 hero-image-cover @[480px]:gap-8 @[480px]:rounded-xl items-center justify-center p-4 sm:p-6 md:p-8 text-center"
+                data-alt="Hero background with Moaiz's portrait and gradient overlay"
+                style='background-image: linear-gradient(rgba(19, 91, 236, 0.35) 0%, rgba(16, 22, 34, 0.55) 100%), url("Moaiz.png");'>
+                <div class="flex flex-col gap-3 items-center">
+                  <img src="Moaiz.png" alt="Moaiz portrait" loading="lazy" class="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 rounded-full object-cover border-4 border-white/30 shadow-lg" />
+                  <div class="flex flex-col gap-2">
+                  <h1
+                    class="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black leading-tight tracking-[-0.033em]">
+                    Moaiz</h1>
+                  <h2
+                    class="text-white/90 text-base sm:text-lg md:text-xl lg:text-2xl font-normal leading-normal">
+                    Graphic &amp; UI/UX Designer</h2>
+                </div>
+                <a class="flex min-w-[84px] w-full sm:w-auto max-w-[320px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 sm:h-12 md:h-14 px-4 sm:px-5 md:px-6 bg-primary text-white text-sm sm:text-base md:text-lg font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors"
+                  href="#work">
+                  <span class="truncate">View My Work</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- About Me Section -->
+        <section class="w-full py-12 sm:py-16 md:py-20 lg:py-24" id="about">
+          <h2
+            class="text-[#111318] dark:text-white text-2xl sm:text-3xl md:text-4xl font-bold leading-tight tracking-[-0.015em] px-4 pb-6 sm:pb-8 text-center">
+            About Me</h2>
+          <div class="flex p-3 sm:p-4 md:p-6 @container bg-white dark:bg-background-dark/50 rounded-xl">
+            <div class="flex w-full flex-col gap-6 sm:gap-8 md:flex-row md:justify-between md:items-center">
+              <div class="flex flex-col md:flex-row gap-4 sm:gap-6 items-center md:items-start flex-1">
+                <img src="Moaiz.png" alt="Moaiz portrait" loading="lazy" class="rounded-full w-24 h-24 sm:w-32 sm:h-32 md:w-36 md:h-36 lg:w-40 lg:h-40 object-cover flex-shrink-0" />
+                <div class="flex flex-col justify-center text-center md:text-left">
+                  <p class="text-[#111318] dark:text-white text-lg sm:text-xl md:text-2xl font-bold leading-tight tracking-[-0.015em]">A
+                    passionate designer creating intuitive and beautiful experiences</p>
+                  <p class="text-[#616f89] dark:text-white/70 text-sm sm:text-base font-normal leading-normal mt-2">I specialize in
+                    creating modern and functional designs using tools like Figma, Adobe XD, and Photoshop. My focus is
+                    on user-centered design to solve real-world problems.</p>
+                </div>
+              </div>
+              <a class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 sm:h-12 px-4 sm:px-5 bg-primary/10 text-primary text-sm sm:text-base font-bold leading-normal tracking-[0.015em] w-full md:w-auto max-w-[280px] hover:bg-primary/20 transition-colors flex-shrink-0"
+                href="#">
+                <span class="truncate">Download Resume</span>
+              </a>
+            </div>
+          </div>
+        </section>
+        <!-- My Work Section -->
+        <section class="w-full py-12 sm:py-16 md:py-20 lg:py-24" id="work">
+          <h2
+            class="text-[#111318] dark:text-white text-2xl sm:text-3xl md:text-4xl font-bold leading-tight tracking-[-0.015em] px-4 pb-6 sm:pb-8 text-center">
+            Selected Projects</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
+            <div
+              class="group flex flex-col overflow-hidden rounded-xl bg-white dark:bg-background-dark/50 shadow-sm hover:shadow-lg transition-shadow duration-300">
+              <div class="aspect-video w-full overflow-hidden">
+                <div class="h-full w-full bg-cover bg-center transition-transform duration-300 group-hover:scale-105"
+                  data-alt="Thumbnail for a mobile banking app project"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB_vHAXmIoGyU5ebdCfxa55DTJf2VLN2d_ULiMrcjmU7Ntm__P18sV9ACzho9gRqfYVspZocoATlejq99AYWB21k1RAPocWJB-ARABtl9JzqjfEPxfsRfZLg30MdLELffJt8n-cro9q6g191W16sVp86cnD8_nr7YBSQ-cdjBuD_mNqUfhewdgAD47CtnCB6cRCe7SOTsby3k-gYxW5aLWuzN_7yzoMQskls4B8XhJBVVexeSXFaliWmV8A2lL0OgNvd53ioj2jMF8")'>
+                </div>
+              </div>
+              <div class="flex flex-col gap-1 p-4 sm:p-5 md:p-6">
+                <p class="text-sm font-medium text-primary">UI/UX Design</p>
+                <h3 class="text-lg sm:text-xl font-bold text-[#111318] dark:text-white">Fintech Mobile App</h3>
+                <p class="text-[#616f89] dark:text-white/70 text-sm sm:text-base">A concept for a modern and user-friendly mobile
+                  banking application.</p>
+              </div>
+            </div>
+            <div
+              class="group flex flex-col overflow-hidden rounded-xl bg-white dark:bg-background-dark/50 shadow-sm hover:shadow-lg transition-shadow duration-300">
+              <div class="aspect-video w-full overflow-hidden">
+                <div class="h-full w-full bg-cover bg-center transition-transform duration-300 group-hover:scale-105"
+                  data-alt="Thumbnail for a travel website project"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBZdgIsK312gFKByEtcdNU_5WhmX07hCqx1TKF_bpbXiCcfah5BEWb3TOkxUFkEzQv2tisjHk1qgX17M3qslddC25Ax-Rr6HDCkAz7H8W9XMopggeCejLPThYhhZSoawSfn5yRpi20tYcx40BrTZJ3zqxekfPr-cs9J7uyukuk92LhCaduHXip-xNxMg_ZBRj8j8o62x3-HgbvzqwuNixJTeKpyX_48AO1F8jmv-OxL8WkNIJD8DdvKbt0QCfN7_Q3g7G2SwjPaNuA")'>
+                </div>
+              </div>
+              <div class="flex flex-col gap-1 p-4 sm:p-5 md:p-6">
+                <p class="text-sm font-medium text-primary">Web Design</p>
+                <h3 class="text-lg sm:text-xl font-bold text-[#111318] dark:text-white">Travel Co. Website</h3>
+                <p class="text-[#616f89] dark:text-white/70 text-sm sm:text-base">A responsive website design for a luxury travel
+                  company.</p>
+              </div>
+            </div>
+            <div
+              class="group flex flex-col overflow-hidden rounded-xl bg-white dark:bg-background-dark/50 shadow-sm hover:shadow-lg transition-shadow duration-300">
+              <div class="aspect-video w-full overflow-hidden">
+                <div class="h-full w-full bg-cover bg-center transition-transform duration-300 group-hover:scale-105"
+                  data-alt="Thumbnail for a branding project"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBDx2RwF27SoepSJwn412Ly6Do20H-fcvDF81-_OYAjCfHvuy42GevW0nyHk6mkoKkfHovYeRf75AgXXQeQ8NC7jeMUaR0esT1JE0mkSOVGLZdgiFfQBWc98sAtkv1DiCTr0hZo2GfDR_7gsuBZF0HRuIlqhbARhDg-gmJcvuizMkMJSeMFfCHbB3ilN0q4ggdPiGbNobA_Nu5xMwmlRWNtBI0Mnil4fSbkdRnb1q6lvVwRs5HMFxUf8L8e28CkMousPqyRgqde7G8")'>
+                </div>
+              </div>
+              <div class="flex flex-col gap-1 p-4 sm:p-5 md:p-6">
+                <p class="text-sm font-medium text-primary">Branding</p>
+                <h3 class="text-lg sm:text-xl font-bold text-[#111318] dark:text-white">Coffee Brand Identity</h3>
+                <p class="text-[#616f89] dark:text-white/70 text-sm sm:text-base">Complete brand identity design for a new
+                  artisanal coffee shop.</p>
+              </div>
+            </div>
+            <div
+              class="group flex flex-col overflow-hidden rounded-xl bg-white dark:bg-background-dark/50 shadow-sm hover:shadow-lg transition-shadow duration-300">
+              <div class="aspect-video w-full overflow-hidden">
+                <div class="h-full w-full bg-cover bg-center transition-transform duration-300 group-hover:scale-105"
+                  data-alt="Thumbnail for a dashboard UI project"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD2_rI7Y-KovE6BjmoLX2zWE74RZ1IBYOmaGYE3hZaTSkzBnkzU75dxo_kk3TS5M7LYUf1X660shdhkgzYlVF0hOZ2DMG9ySYp7qszdASHT3KWUhjQ2wkIjk4kMLyofdsrBSt-rYDHBpH2697bvr471ox0WVcz5tcnXBDoJMn8tAm7vP5PX2ChtQ6u3IGrrBoxRmZNC-dxQ_MW9PAwwGvDI9diYl4nyHtRloTLuXP9JMz1rv-8lp06I-7hN0iOeyQpS2-348ckPs3I")'>
+                </div>
+              </div>
+              <div class="flex flex-col gap-1 p-4 sm:p-5 md:p-6">
+                <p class="text-sm font-medium text-primary">UI Design</p>
+                <h3 class="text-lg sm:text-xl font-bold text-[#111318] dark:text-white">Analytics Dashboard</h3>
+                <p class="text-[#616f89] dark:text-white/70 text-sm sm:text-base">A data visualization dashboard for a SaaS
+                  product.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Certificates Section -->
+        <section class="w-full py-12 sm:py-16 md:py-20 lg:py-24" id="certificates">
+          <h2
+            class="text-[#111318] dark:text-white text-2xl sm:text-3xl md:text-4xl font-bold leading-tight tracking-[-0.015em] px-4 pb-6 sm:pb-8 text-center">
+            Certificates &amp; Achievements</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+            <div class="flex items-center gap-3 sm:gap-4 rounded-xl bg-white dark:bg-background-dark/50 p-4 sm:p-5 md:p-6 shadow-sm">
+              <span class="material-symbols-outlined text-primary text-2xl sm:text-3xl">workspace_premium</span>
+              <div class="flex flex-col">
+                <h3 class="font-bold text-[#111318] dark:text-white text-sm sm:text-base">Google UX Design Certificate</h3>
+                <p class="text-xs sm:text-sm text-[#616f89] dark:text-white/70">Coursera, 2023</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-3 sm:gap-4 rounded-xl bg-white dark:bg-background-dark/50 p-4 sm:p-5 md:p-6 shadow-sm">
+              <span class="material-symbols-outlined text-primary text-2xl sm:text-3xl">workspace_premium</span>
+              <div class="flex flex-col">
+                <h3 class="font-bold text-[#111318] dark:text-white text-sm sm:text-base">Interaction Design Foundation Member</h3>
+                <p class="text-xs sm:text-sm text-[#616f89] dark:text-white/70">IDF, 2022</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-3 sm:gap-4 rounded-xl bg-white dark:bg-background-dark/50 p-4 sm:p-5 md:p-6 shadow-sm">
+              <span class="material-symbols-outlined text-primary text-2xl sm:text-3xl">workspace_premium</span>
+              <div class="flex flex-col">
+                <h3 class="font-bold text-[#111318] dark:text-white text-sm sm:text-base">Advanced Figma Prototyping</h3>
+                <p class="text-xs sm:text-sm text-[#616f89] dark:text-white/70">Udemy, 2023</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Contact Section -->
+        <section class="w-full py-12 sm:py-16 md:py-20 lg:py-24" id="contact">
+          <div class="mx-auto max-w-2xl text-center px-4">
+            <h2 class="text-[#111318] dark:text-white text-2xl sm:text-3xl md:text-4xl font-bold leading-tight tracking-[-0.015em] pb-3">
+              Get In Touch</h2>
+            <p class="text-[#616f89] dark:text-white/70 text-sm sm:text-base">Have a project in mind or just want to say hi? Feel free to
+              send me a message.</p>
+          </div>
+          <div class="mx-auto mt-8 sm:mt-10 max-w-xl px-4">
+            <a href="mailto:smoiazali.shah@gmail.com" aria-label="Email Moaiz" class="flex w-full items-center justify-center rounded-lg h-12 sm:h-14 px-5 sm:px-6 bg-primary text-white text-base sm:text-lg font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
+              Email me
+            </a>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer class="w-full bg-nav dark:bg-nav-dark text-white">
+      <div class="mx-auto max-w-5xl px-4 sm:px-10 py-6 sm:py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+  <p class="text-sm text-center text-white/80">© 2025 Moaiz. All rights reserved.</p>
+        <div class="flex items-center gap-6">
+          <a class="text-white/70 hover:text-white transition-colors"
+            data-alt="LinkedIn social media icon" href="#">
+            <svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24">
+              <path clip-rule="evenodd"
+                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                fill-rule="evenodd"></path>
+            </svg>
+          </a>
+          <a class="text-white/70 hover:text-white transition-colors"
+            data-alt="Behance social media icon" href="#">
+            <svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24">
+              <path
+                d="M22 6h-6v-2h6v2zm-6 4h6v2h-6v-2zm-6-4h4v2h-4v-2zm-2 2v-2h-6v2h6zm-6 2h6v2h-6v-2zm8 0h4v2h-4v-2zm-2 2v2h-10v-2h10zm10 0h6v2h-6v-2zm-4 4h-4v-2h4v2zm-6-2v-2h-6v2h6z">
+              </path>
+            </svg>
+          </a>
+          <a class="text-white/70 hover:text-white transition-colors"
+            data-alt="Dribbble social media icon" href="#">
+            <svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24">
+              <path
+                d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10-10-4.477-10-10 4.477-10 10-10zm0 18c4.411 0 8-3.589 8-8s-3.589-8-8-8-8 3.589-8 8 3.589 8 8 8zm-2.5-10.5c1.381 0 2.5-1.119 2.5-2.5s-1.119-2.5-2.5-2.5-2.5 1.119-2.5 2.5 1.119 2.5 2.5 2.5zm5 0c1.381 0 2.5-1.119 2.5-2.5s-1.119-2.5-2.5-2.5-2.5 1.119-2.5 2.5 1.119 2.5 2.5 2.5zm-2.5 5c1.381 0 2.5-1.119 2.5-2.5s-1.119-2.5-2.5-2.5-2.5 1.119-2.5 2.5 1.119 2.5 2.5 2.5z">
+              </path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script>
+    // Mobile menu toggle
+    (function () {
+      const btn = document.getElementById('mobile-menu-btn');
+      const menu = document.getElementById('mobile-menu');
+      if (!btn || !menu) return;
+      btn.addEventListener('click', function () {
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!expanded));
+        menu.classList.toggle('hidden');
+      });
+      // close menu when a link is clicked
+      menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => menu.classList.add('hidden')));
+    })();
+  </script>
+</body>
+
+</html>
